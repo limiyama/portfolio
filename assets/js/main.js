@@ -16,7 +16,7 @@ if(navClose) {
     })
 }
 
-const navLink = document.querySelectorAll('.nav__link')
+const navLink = document.querySelectorAll('.nav_link')
 
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
@@ -41,9 +41,9 @@ const sr = ScrollReveal({
     duration: 2500,
 })
 
-sr.reveal(`.home__images`, {distance: '120px', delay: 400})
-sr.reveal(`.home__title`, {delay: 1000})
-sr.reveal(`.home__description`, {delay: 1200})
-sr.reveal(`.home__button`, {delay: 1400})
-sr.reveal(`.home__footer`, {delay: 1600})
-sr.reveal(`.home__data div`, {origin: 'right', interval: 100, delay: 1800})
+sr.reveal(`.home_images`, {distance: '120px', delay: 400})
+sr.reveal(`.home_title`, {delay: 1000})
+sr.reveal(`.home_description`, {delay: 1200})
+sr.reveal(`.home_button`, {delay: 1400})
+sr.reveal(`.home_footer`, {delay: 1600})
+sr.reveal(`.home_data div`, {origin: 'right', interval: 100, delay: 1800})

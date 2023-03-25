@@ -34,7 +34,7 @@ const scrollHeader = () => {
 }
 window.addEventListener('scroll', scrollHeader)
 
-// scroll reveal 
+// scroll animacoes revelar
 const sr = ScrollReveal({
     origin: 'bottom',
     distance: '60px',
@@ -47,3 +47,24 @@ sr.reveal(`.home_description`, {delay: 1200})
 sr.reveal(`.home_button`, {delay: 1400})
 sr.reveal(`.home_footer`, {delay: 1600})
 sr.reveal(`.home_data div`, {origin: 'right', interval: 100, delay: 1800})
+
+// mostrar redes sociais
+const mostrarSocial = (toggleCard, socialCard) => {
+    const toggle = document.getElementById(toggleCard),
+          social = document.getElementById(socialCard)
+
+    toggle.addEventListener('click', () => {
+        // faz animacao reversa se já tiver animado
+        if(social.classList.contains('animation')){
+            social.classList.add('down-animation')
+            
+            setTimeout(() => {
+                social.classList.remove('down-animation')
+            }, 1000)
+        }
+
+        // faz animacao
+        social.classList.toggle('animation')
+    })
+}
+mostrarSocial('card-toggle','card-social')

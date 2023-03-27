@@ -68,3 +68,4 @@ const mostrarSocial = (toggleCard, socialCard) => {
     })
 }
 mostrarSocial('card-toggle','card-social')
+

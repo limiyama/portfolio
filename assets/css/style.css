@@ -259,7 +259,7 @@ img {
   border-radius: 1.5rem;
   text-align: center;
   justify-self: center;
-  margin: 0 auto
+  margin: 1.5rem auto;
 }
 
 .card_img {
@@ -406,12 +406,48 @@ img {
   position: relative;
 }
 
+.proj_container {
+  display: flex;
+  
+}
+
+.cardProj {
+  width: 400px;
+  background: linear-gradient(90deg,
+    var(--rosa-escuro) 0%,
+    var(--rosa-claro) 100%);
+  padding: 0 0 1rem;
+  border-radius: 1.5rem;
+  justify-self: center;
+  margin: 0 auto
+}
+
+.cardProj_img {
+  width: fit-content;
+  border-radius: 1.5rem 1.5rem 0 0; 
+  text-align: left;
+}
+
+.cardProj_name {
+  color: var(--text-color);
+  font-size: var(--h2-font-size);
+  margin-top: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cardProj_text {
+  font-size: var(--normal-font-size);
+  margin: 1rem;
+}
+
 /* aparelhos piticos */
 @media screen and (max-width: 340px){
   .home_img-Eu {
     width: 220px;
     margin-top: 20px;
   }
+
 }
 
 
@@ -445,6 +481,12 @@ img {
     align-items: center;
     gap: 10rem 4rem;
   }
+  .proj_container {
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
   .home_group {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
@@ -465,9 +507,16 @@ img {
     overflow: hidden;
   }
   
-  .card_info {
+  .card_info{
     margin-top: 4rem;
   } 
+  
+  .card {
+    margin: 2rem 4rem;
+  }
+  .card_proj {
+    width: 140px;
+  }
 }
 
 
@@ -488,6 +537,7 @@ img {
   .home_container {
     padding: 1rem 0 2rem;
   }
+  
 }
 
 @media screen and (min-width: 1048px) {

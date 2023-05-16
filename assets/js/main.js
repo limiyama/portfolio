@@ -44,7 +44,7 @@ const sr = ScrollReveal({
 sr.reveal(`.home_images`, {distance: '120px', delay: 400})
 sr.reveal(`.home_title`, {delay: 1000})
 sr.reveal(`.home_description`, {delay: 1200})
-sr.reveal(`.home_button`, {delay: 1400})
+sr.reveal(`.home_button`, {delay: 1200})
 sr.reveal(`.home_footer`, {delay: 1600})
 sr.reveal(`.home_data div`, {origin: 'right', interval: 100, delay: 1800})
 

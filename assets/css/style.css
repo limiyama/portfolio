@@ -568,11 +568,21 @@ img {
   .row_proj_container {
     display: block;
   }
+  .btnCard {
+    font-size: 1rem;
+  }
+  .proj_container {
+    
+    padding: 1rem;
+  }
   .cardProj {
     width: 270px;
   }
   .card_container {
-    margin: 1rem;
+    margin: 1rem 0 0;
+  }
+  .about_container {
+    padding: 2rem;
   }
   .nav_menu {
     position: fixed;
@@ -591,7 +601,7 @@ img {
   } 
   
   .card {
-    margin: 2rem 4rem;
+    margin: 0;
   }
   .card_proj {
     width: 140px;

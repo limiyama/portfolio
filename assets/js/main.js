@@ -6,6 +6,7 @@ const navMenu = document.getElementById('nav-menu'),
 if(navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.add('show-menu')
+        console.log('clicou')
     })
 }
 
@@ -13,6 +14,7 @@ if(navToggle) {
 if(navClose) {
     navClose.addEventListener('click', () => {
         navMenu.classList.remove('show-menu')
+        console.log('removeu')
     })
 }
 
